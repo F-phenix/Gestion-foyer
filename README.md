@@ -8,3 +8,9 @@
 - [ ] Répartition de chambre
 - [ ] Réglement interne
 - [ ] Emploi du temps
+
+### Détail du projet:
+- [ ] Authentification: user et admin
+- [ ] Menu de navigation
+- [ ] Informations: 
+- [ ] Tâches: afficher la liste des tâches, ajouter, modifier, supprimer
