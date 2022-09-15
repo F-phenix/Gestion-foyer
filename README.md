@@ -12,5 +12,8 @@
 ### Détail du projet:
 - [ ] Authentification: user et admin
 - [ ] Menu de navigation
-- [ ] Informations: 
+- [ ] Acceuil: Actualités
 - [ ] Tâches: afficher la liste des tâches, ajouter, modifier, supprimer
+- [ ] Règlement interne
+- [ ] Messages: create, read, update, delete
+- [ ] Membres: Informations sur chaque étudiant (ES, emploi du temps, ...)
