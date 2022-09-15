@@ -6,4 +6,5 @@
 - [ ] JIRAMA
 - [ ] Gestion de connexion 
 - [ ] Répartition de chambre
+- [ ] Réglement interne
 
