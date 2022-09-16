@@ -13,4 +13,4 @@
 - [ ] Authentification: user et admin
 - [ ] Menu de navigation
 - [ ] Informations: 
-- [ ] Tâches: afficher la liste des tâches, ajouter, modifier, supprimer
+- [ ] Tâches: afficher la liste des tâches, ajouter, modifier, supprimer, divisers
