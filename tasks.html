@@ -15,19 +15,34 @@
             <div id="F-phenix">
                 <img id="logo" src="./public/img/logo.jpg" alt="logo" onclick="show_menu()">
                 <span id="name">F-phenix</span>
-                <div id="nav-menu">
-                    <p> Menu</p>
-                </div>
             </div>
-            <h3>CETTE SEMAINE</h3>
+            <h5>TACHES</h5>
             <!-- Pour ce faciliter la tache-->
             <span></span>
         </div>
-        <div class="add-task">
-            <input type="text">
-            <button>Ajouter</button>
-        </div>
-       
+        <div class="coprs">
+            <div id="nav-menu">
+                <span class="menu">Acceuil</span>
+                <span class="menu">Membres</span>
+                <span class="menu">Emplois du temps</span>
+                <span class="menu">Référents</span>
+                <span class="menu">Jirama</span>
+                <span class="menu">Règlements</span>
+            </div>
+            <div class="tasks-list">
+                <div id="head-board">
+                    <div id="tilte-board">
+                        <span id="task-list-text">List des taches</span>
+                    </div>
+                    <div class="add-task">
+                        <input type="text" placeholder="nom de la tache + (Goupe ou chambre)">
+                        <button id="add">Ajouter la tache</button>
+                    </div>
+                </div> 
+                <div id="body-board">
+                </div>
+            </div>
+        </div>    
     </div>
     <script src="./public/js/bootstrap.bundle.min.js"></script>
     <script src="./public/js/tasks.js"></script>
