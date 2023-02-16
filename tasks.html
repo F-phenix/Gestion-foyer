@@ -16,28 +16,48 @@
                 <img id="logo" src="./public/img/logo.jpg" alt="logo" onclick="show_menu()">
                 <span id="name">F-phenix</span>
             </div>
-            <h5>TACHES</h5>
-            <!-- Pour ce faciliter la tache-->
-            <span></span>
+            <h5 style="margin-left: 7.5%;">TACHES</h5>
         </div>
         <div class="coprs">
             <div id="nav-menu">
-                <span class="menu">Acceuil</span>
-                <span class="menu">Membres</span>
-                <span class="menu">Emplois du temps</span>
-                <span class="menu">Référents</span>
-                <span class="menu">Jirama</span>
-                <span class="menu">Règlements</span>
+                <span class="menu" 
+                onmouseover="displayBackground(this)" 
+                onmouseout="deleteBackgroud(this)">
+                    Acceuil
+                </span>
+                <span class="menu" onmouseover="displayBackground(this)" 
+                onmouseout="deleteBackgroud(this)">
+                    Membres
+                </span>
+                <span class="menu" onmouseover="displayBackground(this)" 
+                onmouseout="deleteBackgroud(this)">
+                    Emplois du temps
+                </span>
+                <span class="menu" onmouseover="displayBackground(this)" 
+                onmouseout="deleteBackgroud(this)">
+                    Référents
+                </span>
+                <span class="menu" onmouseover="displayBackground(this)" 
+                onmouseout="deleteBackgroud(this)">
+                    Jirama
+                </span>
+                <span class="menu" onmouseover="displayBackground(this)" 
+                onmouseout="deleteBackgroud(this)">
+                    Règlements
+                </span>
             </div>
             <div class="tasks-list">
                 <div id="head-board">
                     <div id="tilte-board">
                         <span id="task-list-text">List des taches</span>
                     </div>
-                    <div class="add-task">
-                        <input type="text" placeholder="nom de la tache + (Goupe ou chambre)">
-                        <button id="add">Ajouter la tache</button>
+                    <div class="search-bar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                        <input type="text" placeholder="Recherche">
                     </div>
+                    <button id="add">Ajouter une tache</button>
                 </div> 
                 <div id="body-board">
                 </div>
@@ -45,6 +65,6 @@
         </div>    
     </div>
     <script src="./public/js/bootstrap.bundle.min.js"></script>
-    <script src="./public/js/tasks.js"></script>
+    <script src="./public/js/animations.js"></script>
 </body>
 </html>

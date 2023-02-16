@@ -5,7 +5,6 @@ body{
 
 .tool-bar{
     display: flex;
-    justify-content: space-between;
     height:10%;
     padding-top: .3%;
     background-color: #fff;
@@ -65,13 +64,27 @@ h5{
 #head-board{
     display: flex;
     font-weight: 500;
-    justify-content: center;
+    justify-content: space-between;
+    
 }
 
-.add-task{
-    width: 80%;
-    margin-left: 10%
+.search-bar{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
 }
+
+input[type=text]{
+    border: 1px solid #fff;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 1px solid rgba(18, 228, 217, 0.877);
+  }
+
 
 input{
     padding-left: 2%;
@@ -82,7 +95,6 @@ input{
 }
 
 #add{
-    margin-left: 1%;
     border: 1px solid rgba(18, 228, 217, 0.521);
     border-radius: 15px;
     color: rgba(18, 228, 217, 0.521);
