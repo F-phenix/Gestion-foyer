@@ -18,33 +18,76 @@
             </div>
             <h5 style="margin-left: 7.5%;">TACHES</h5>
         </div>
+<!-- Boite de dialogue  -->
+        <dialog id="add-dialog">
+                <h5>Ajouter une tache</h5>
+                <form method="dialog">
+                    <div>
+                        <span>Designation :</span>
+                        <select name="task-name" id="task-name">
+                            <option value="RDC">RDC</option>
+                            <option value="Escalier">Escalier</option>
+                            <option value="Cuisine">Cuisine</option>
+                            <option value="Salle d'info">Salle d'info</option>
+                            <option value="Douche">Douche</option>
+                            <option value="WC">WC</option>
+                            <option value="Deventure">Deventure</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>Groupe</span>
+                        <select name="g-bumber" id="g-bumber">
+                            <option value="">G1</option>
+                            <option value="">G2</option>
+                            <option value="">G3</option>
+                            <option value="">G4</option>
+                            <option value="">C1</option>
+                            <option value="">C2</option>
+                            <option value="">C3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h6>Date de début</h6>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <h6>Date de fin</h6>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <input type="submit" value="Confirmer">
+                        <button id="add-cancel">Annuler</button>
+                    </div>
+                </form>
+        </dialog>
+    <!-- Fin boite de dialogue -->
         <div class="coprs">
-            <div id="nav-menu">
-                <span class="menu" 
+            <div id="nav-menu" style="height: 614px;">
+                <button class="menu" 
                 onmouseover="displayBackground(this)" 
                 onmouseout="deleteBackgroud(this)">
                     Acceuil
-                </span>
-                <span class="menu" onmouseover="displayBackground(this)" 
+                </button>
+                <button class="menu" onmouseover="displayBackground(this)" 
                 onmouseout="deleteBackgroud(this)">
                     Membres
-                </span>
-                <span class="menu" onmouseover="displayBackground(this)" 
+                </button>
+                <button class="menu" onmouseover="displayBackground(this)" 
                 onmouseout="deleteBackgroud(this)">
                     Emplois du temps
-                </span>
-                <span class="menu" onmouseover="displayBackground(this)" 
+                </button>
+                <button class="menu" onmouseover="displayBackground(this)" 
                 onmouseout="deleteBackgroud(this)">
                     Référents
-                </span>
-                <span class="menu" onmouseover="displayBackground(this)" 
+                </button>
+                <button class="menu" onmouseover="displayBackground(this)" 
                 onmouseout="deleteBackgroud(this)">
                     Jirama
-                </span>
-                <span class="menu" onmouseover="displayBackground(this)" 
+                </button>
+                <button class="menu" onmouseover="displayBackground(this)" 
                 onmouseout="deleteBackgroud(this)">
                     Règlements
-                </span>
+                </button>
             </div>
             <div class="tasks-list">
                 <div id="head-board">
@@ -57,14 +100,30 @@
                           </svg>
                         <input type="text" placeholder="Recherche">
                     </div>
-                    <button id="add">Ajouter une tache</button>
+                    <button id="add" onclick="showDialgBox()">Ajouter une tache</button>
                 </div> 
                 <div id="body-board">
+                    <div id="t-head">
+                        <table style="width:100%">
+                            <thead>
+                                <th id="t-board_id">ID</th>
+                                <th class="t-board_other">Designation</th>
+                                <th class="t-board_other">Groupe</th>
+                                <th class="t-board_other">Statut</th>
+                                <th class="t-board_other">Date de début</th>
+                                <th class="t-board_other">date de fin</th>
+                            </thead>
+                        </table>
+                    </div>
+                    <div id="t-body">
+                        <!-- insetion des taches -->
+                    </div>
                 </div>
             </div>
         </div>    
     </div>
     <script src="./public/js/bootstrap.bundle.min.js"></script>
     <script src="./public/js/animations.js"></script>
+    <script src="./public/js/display.js"></script>
 </body>
 </html>

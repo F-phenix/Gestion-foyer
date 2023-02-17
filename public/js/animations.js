@@ -11,11 +11,13 @@ function deleteBackgroud(obj){
 
 // Gere l'animation du bouter ajouter une tache
 var addTaskButton = document.getElementById("add"); 
+
 addTaskButton.addEventListener('mouseover', function(){
     this.style.backgroundColor = "rgba(18, 228, 217, 0.521)";
     this.style.color = "#fff";
     this.style.transition = "0.5s";
 });
+
 addTaskButton.addEventListener('mouseout', function(){
     this.style.backgroundColor = "initial";
     this.style.color = "rgba(18, 228, 217, 0.521)";

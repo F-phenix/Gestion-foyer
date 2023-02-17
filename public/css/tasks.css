@@ -1,6 +1,5 @@
 body{
     background-color: rgb(241, 241, 241);
-    max-height: 40rem;
 }
 
 .tool-bar{
@@ -35,8 +34,8 @@ h5{
     flex-direction: column;
     align-items: center;
     width: 18%;
-    background: linear-gradient(to bottom,#df0606,rgba(18, 228, 217, 0.521));
-    height: 39.9rem;
+    background: linear-gradient(to bottom,#df0606,#12e4d985);
+    height: max-content;
     color: #fff;
     font-weight: 500;
 }
@@ -48,6 +47,10 @@ h5{
     width: 5rem;
     border-radius: 25px;
     width: 80%;
+    border-style: none;
+    color: #fff;
+    font-weight: 500;
+    background-color: transparent;
 }
 
 .tasks-list{
@@ -56,7 +59,7 @@ h5{
     height: 36rem;
     background-color: #fff;
     width: 98.5%;
-    margin: 4% 1.5% .5% 1.5%;
+    margin: 2% 1.5% .5% 1.5%;
     padding: 1.5%;
     border-radius: 10px;
 }
@@ -64,6 +67,7 @@ h5{
 #head-board{
     display: flex;
     font-weight: 500;
+    height: 5.3%;
     justify-content: space-between;
     
 }
@@ -100,4 +104,33 @@ input{
     color: rgba(18, 228, 217, 0.521);
     background-color: #fff;
     font-weight: 500;
+}
+
+#body-board{
+    display: flex;
+    flex-direction: column;
+}
+
+#t-head{
+    display: flex;
+    margin-top: 3%;
+    box-shadow: 0px 2px #bbb7b79d;
+    font-weight: 500;
+}
+
+.t-board_other{
+    text-align: center;
+}
+
+#t-body{
+    width: 100%;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+#add-dialog{
+    border-radius: 8px;
+    width: 400px;
+    height: 350px;
+    border-style: none;
 }
